@@ -7,7 +7,8 @@ const Fuse = require('fuse.js');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 3001; 
+const port = 5000;
+
 // Middleware
 app.use(cors());
 app.use(express.json());
