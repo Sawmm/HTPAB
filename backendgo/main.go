@@ -143,7 +143,7 @@ func main() {
 
 	// Configure CORS
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://localhost:5000"} // Adjust this to match your frontend URL
+	config.AllowOrigins = []string{"http://localhost:8080"} // Adjust this to match your frontend URL
 	r.Use(cors.New(config))
 
 	r.POST("/check-dj", func(c *gin.Context) {
